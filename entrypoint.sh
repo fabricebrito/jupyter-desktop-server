@@ -36,4 +36,4 @@ destport=$((port + 1))
 echo "Using internal port $destport"
 
 #jhsingle-native-proxy --port $port --destport $destport code-server {--}auth none {--}bind-addr 0.0.0.0:$destport {--}user-data-dir /workspace /workspace
-jhsingle-native-proxy --port $port --destport $destport websockify {-}v {--}web /opt/install/jupyter_desktop/share/web/noVNC-1.1.0 {--}heartbeat 30 $destport  {--} /bin/sh -c 'cd /opt/install && /usr/local/bin/vncserver -verbose -xstartup /opt/install/jupyter_desktop/share/xstartup -geometry 1680x1050 -SecurityTypes None -fg :1'
+jhsingle-native-proxy --port $port --destport $destport websockify {-}v {--}web /opt/install/jupyter_desktop/share/web/noVNC-1.1.0 {--}heartbeat 30 $destport  {--} /bin/sh {-}c 'cd /opt/install && /usr/local/bin/vncserver -verbose -xstartup /opt/install/jupyter_desktop/share/xstartup -geometry 1680x1050 -SecurityTypes None -fg :1'
