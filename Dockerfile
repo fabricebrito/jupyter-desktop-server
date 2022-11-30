@@ -1,5 +1,5 @@
 #FROM jupyter/base-notebook:python-3.7.6
-FROM docker.io/ubuntu:22.04
+FROM docker.io/ubuntu:20.04
 
 USER root
 
