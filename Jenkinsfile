@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        def dockerImageName = "ellip-studio/studio-desktop:0.3"
+        def dockerImageName = "ellip-studio/studio-desktop:0.4"
         def dockerRegistry = "cr.terradue.com"
     }
      stages {
