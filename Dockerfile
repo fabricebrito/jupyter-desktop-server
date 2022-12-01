@@ -54,4 +54,7 @@ RUN chmod +x /opt/entrypoint.sh
 
 EXPOSE 8888
 
+RUN apt-get install -y websockify && cp /usr/lib/websockify/rebind.cpython-38-x86_64-linux-gnu.so /usr/local/lib/rebind.so
+
 USER jovyan
+
